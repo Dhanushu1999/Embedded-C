@@ -6,7 +6,7 @@ BUILD_DIR = Build
 SRC = project_main.c\
 src/user_utils.c
 
-# All header file paths
+# All header file path
 INC = -I inc
 
 # Find out the OS and configure the variables accordingly
