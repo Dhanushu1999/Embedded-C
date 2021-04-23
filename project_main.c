@@ -8,10 +8,10 @@
  * @copyright Copyright (c) 2021
  * 
  */
+
 #include "project_config.h"
 
 #include "user_utils.h"
-#include "blinky.h"
 
 /**
  * @brief Initialize all the Peripherals and pin configurations
@@ -20,12 +20,11 @@
 void peripheral_init(void)
 {
 	/* Configure LED Pin */
-	DDRB |= (1 << DDB0);
-}
-
-void change_led_state(uint8_t state)
-{
-	LED_PORT = (state << LED_PIN);
+	DDRB |=(1<<LED_PIN);
+    DDRD &=~(1<<BUTTONSENSOR);
+    DDRD &=~(1<<TEMPSENSOR);
+    SENSOR|=(1<<BUTTONSENSOR);
+    SENSOR|=(1<<TEMPSENSOR);
 }
 
 
@@ -43,11 +42,16 @@ int main(void)
 
 	for(;;)
 	{
-        change_led_state(LED_ON);
-		delay_ms(LED_ON_TIME);
-		
-        change_led_state(LED_OFF);
-		delay_ms(LED_OFF_TIME);	
+        if((PIND&(1<<BUTTONSENSOR)) && (PIND&(1<<TEMPSENSOR)))
+       {
+           LED_PORT|=(1<< LED_PIN);
+           delay_ms(200);
+       }
+       else
+       {
+           LED_PORT&=~(1<<LED_PIN);
+           delay_ms(200);
+       }	
 	}
 	return 0;
 }
