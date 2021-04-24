@@ -1,9 +1,9 @@
 /**
  * @file project_main.c
- * @author Bharath.G ()
+ * @author Dhanush U (Dhanushu1999@gmail.com)
  * @brief Project to Blink an LED at 1000ms ON and 500 ms OFF Interval
  * @version 0.1
- * @date 2021-04-23
+ * @date 2021-04-24
  * 
  * @copyright Copyright (c) 2021
  * 

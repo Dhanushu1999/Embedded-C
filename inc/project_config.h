@@ -2,10 +2,10 @@
 #define __PROJECT_CONFIG_H__
 /**
  * @file project_config.h
- * @author Bharath.G ()
+ * @author Dhanush U (Dhanushu1999@gmail.com)
  * @brief Configuration file to define pins and ports for the interfaced peripherals
  * @version 0.1
- * @date 2021-04-23
+ * @date 2021-04-24
  * 
  * @copyright Copyright (c) 2021
  * 
@@ -21,8 +21,8 @@
 #define LED_PORT (PORTB)    /**< LED Port Number */
 #define LED_PIN  (PORTB0)   /**< LED Pin number  */
 #define SENSOR  (PORTD)   /**< Sensors */
-#define BUTTONSENSOR  (PORTD0)   /**< LED Pin number  */
-#define TEMPSENSOR  (PORTD1)   /**< LED Pin number  */
+#define BUTTONSENSOR  (PORTD0)   /**< Port for Button Sensor  */
+#define TEMPSENSOR  (PORTD1)   /**< Port for Temp Sensor   */
 
 
 #endif /* __PROJECT_CONFIG_H__ */
