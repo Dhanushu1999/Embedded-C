@@ -9,6 +9,7 @@ src/user_utils.c
 # All header file path
 INC = -I inc
 
+DOCUMENTATION_OUTPUT = documentation/html
 # Find out the OS and configure the variables accordingly
 ifdef OS	# All configurations for Windwos OS
    # Delete command 
@@ -49,10 +50,10 @@ analysis: $(SRC)
 
 doc:
 	#Build the code code documentation using Doxygen command line utility
-	make -C documentation
+	make -C ./documentation
 
 clean:
 	# Remove all the build files and generated document files
 	$(RM) $(call FixPath,$(BUILD_DIR)/*)
-	make -C documentation clean
-	rmdir $(BUILD_DIR)
+	rm -rf $(DOCUMENTATION_OUTPUT)
+	
