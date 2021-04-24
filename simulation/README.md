@@ -2,7 +2,7 @@
 
 |When both sensors are ON|When both sensors are OFF|
 |:--:|:--:|
-|[True](https://github.com/Dhanushu1999/STEPIn_Emb-C/blob/main/simulation/TRUE.png)|[False](https://github.com/Dhanushu1999/STEPIn_Emb-C/blob/main/simulation/FALSE.png)|
+|![True](https://github.com/Dhanushu1999/STEPIn_Emb-C/blob/main/simulation/TRUE.png)|![False](https://github.com/Dhanushu1999/STEPIn_Emb-C/blob/main/simulation/FALSE.png)|
 
 ## Code 
 ```
