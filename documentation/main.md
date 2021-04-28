@@ -1,1 +1,1 @@
-@mainpage Blinky Example by Bharath G @subpage project_main.c
+@mainpage LED_BLINK Example by Dhanush U @subpage heatcontrolSystem.c

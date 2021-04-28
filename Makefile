@@ -3,8 +3,10 @@ PROJ_NAME = LED_BLINK
 BUILD_DIR = Build
 
 # All Source code files
-SRC = project_main.c\
-src/user_utils.c
+SRC = heatcontrolSystem.c\
+src/user_utils.c\
+src/activity1.c\
+src/activity2.c\
 
 # All header file path
 INC = -I inc

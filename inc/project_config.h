@@ -11,9 +11,6 @@
  * 
  */
 
-/**
- * Macro Definitions
- */
 #include <avr/io.h>
 
 #define F_CPU 16000000UL 	/**< Clock Frequency of MCU is 16 MHz */

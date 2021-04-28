@@ -9,23 +9,8 @@
  * 
  */
 
-#include "project_config.h"
-
-#include "user_utils.h"
-
-/**
- * @brief Initialize all the Peripherals and pin configurations
- * 
- */
-void peripheral_init(void)
-{
-	/* Configure LED Pin */
-	DDRB |=(1<<LED_PIN);
-    DDRD &=~(1<<BUTTONSENSOR);
-    DDRD &=~(1<<TEMPSENSOR);
-    SENSOR|=(1<<BUTTONSENSOR);
-    SENSOR|=(1<<TEMPSENSOR);
-}
+#include "activity1.h"
+#include "activity2.h"
 
 
 /**
@@ -39,19 +24,11 @@ int main(void)
 {
 	/* Initialize Peripherals */
 	peripheral_init();
+    Init_ADC();
 
 	for(;;)
 	{
-        if((PIND&(1<<BUTTONSENSOR)) && (PIND&(1<<TEMPSENSOR)))
-       {
-           LED_PORT|=(1<< LED_PIN);
-           delay_ms(200);
-       }
-       else
-       {
-           LED_PORT&=~(1<<LED_PIN);
-           delay_ms(200);
-       }	
+       tempbuttonSensor();
 	}
 	return 0;
 }
