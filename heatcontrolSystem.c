@@ -11,6 +11,7 @@
 
 #include "activity1.h"
 #include "activity2.h"
+#include "activity3.h"
 
 
 /**
@@ -25,6 +26,7 @@ int main(void)
 	/* Initialize Peripherals */
 	peripheral_init();
     Init_ADC();
+	Init_PWM();
 
 	for(;;)
 	{

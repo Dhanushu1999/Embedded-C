@@ -10,7 +10,7 @@
  */
 #ifndef __ACTIVITY2_H__
 #define __ACTIVITY2_H__
-
+#include "activity1.h"
 /**
  * @brief potentiometer is used to indicate readings of temperature sensor and ADC value is stored in RAM Table
  * 

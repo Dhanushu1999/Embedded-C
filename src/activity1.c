@@ -27,6 +27,7 @@ void tempbuttonSensor()
        {
            PORTB|=(1<<PB0);
            temp=Read_ADC(0);/**< Read tempsensor value */
+           GeneratePWM(temp);
            delay_ms(200);
        }
        else

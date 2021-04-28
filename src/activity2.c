@@ -1,11 +1,12 @@
 #include <avr/io.h>
+#include "activity2.h"
 /**
  * @brief Initialize ADC
  * 
  */
 void Init_ADC(){
-    ADMUX = (1<<REFS0);
-    ADCSRA = (1<<ADEN)|(7<<ADPS0);
+    ADMUX = (1<<REFS0);/**< Select Vref=Vcc*/
+    ADCSRA = (1<<ADEN)|(7<<ADPS0);/**< set prescaller to 128 and enable ADC*/
 
 }
 

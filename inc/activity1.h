@@ -14,7 +14,7 @@
 #include "project_config.h"
 #include "user_utils.h"
 #include "activity2.h"
-
+#include "activity3.h"
 /**
  * @brief sets LED pin to high when both buttonsensor and tempsensor are activated
  * 
