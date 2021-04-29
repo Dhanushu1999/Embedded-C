@@ -12,6 +12,7 @@
 #include "activity1.h"
 #include "activity2.h"
 #include "activity3.h"
+#include "activity4.h"
 
 
 /**
@@ -27,6 +28,7 @@ int main(void)
 	peripheral_init();
     Init_ADC();
 	Init_PWM();
+	Init_USART();
 
 	for(;;)
 	{
