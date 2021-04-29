@@ -6,7 +6,7 @@
  */
 void Init_ADC(){
     ADMUX = (1<<REFS0);/**< Select Vref=Vcc*/
-    ADCSRA = (1<<ADEN)|(7<<ADPS0);/**< set prescaller to 128 and enable ADC*/
+    ADCSRA = (1<<ADEN)|(7<<ADPS0);/**< set prescaler to 128 and enable ADC*/
 
 }
 
