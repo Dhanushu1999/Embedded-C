@@ -16,8 +16,8 @@
  * 
  */
 
-void Init_ADC();
-uint16_t Read_ADC(uint8_t ch);
+void Init_ADC();/**< Initialize all the Peripherals and pin configurations for ADC */
+uint16_t Read_ADC(uint8_t ch);/**< Perform ADC conversion for readings from temperature sensor */
 
 
 #endif  

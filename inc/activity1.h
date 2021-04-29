@@ -19,7 +19,7 @@
  * @brief sets LED pin to high when both buttonsensor and tempsensor are activated
  * 
  */
-void peripheral_init(void);/**< Inotialize MCU */
+void peripheral_init(void);/**< Initialize all the Peripherals and pin configurations for MCU */
 void tempbuttonSensor();/**< Decides whether the tempsensor is to be considered */
 
 

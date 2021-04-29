@@ -7,6 +7,7 @@ SRC = heatcontrolSystem.c\
 src/user_utils.c\
 src/activity1.c\
 src/activity2.c\
+src/activity3.c\
 
 # All header file path
 INC = -I inc

@@ -3,6 +3,7 @@
 
 #include "activity1.h"
 #include "activity2.h"
+#include "activity3.h"
 /**
  * @brief Initialize all the Peripherals and pin configurations
  * 
