@@ -16,6 +16,12 @@
 |:--:|:--:|
 |![High](https://github.com/Dhanushu1999/STEPIn_Emb-C/blob/main/simulation/PWM_HIGH.png)|![Low](https://github.com/Dhanushu1999/STEPIn_Emb-C/blob/main/simulation/PWM_LOW.png)|
 
+# Activity4
+
+|UART message for 5V|UART message for 0V|
+|:--:|:--:|
+|![highV](https://github.com/Dhanushu1999/STEPIn_Emb-C/blob/main/simulation/UART_5V.png)|![LowV](https://github.com/Dhanushu1999/STEPIn_Emb-C/blob/main/simulation/UART_0V.png)|
+
 ## Code 
 ```
 	for(;;)
