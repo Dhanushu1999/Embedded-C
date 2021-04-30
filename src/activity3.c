@@ -19,53 +19,53 @@ void Init_PWM(void){
  * 
  * @param Temperature 
  */
-void GeneratePWM(uint16_t Temperature){
-    if(Temperature>=0 && Temperature<=200){
-        OCR1A = 205;
-        unsigned char data1[]="Temperature: 20 C\n";
+void GeneratePWM(uint16_t ADC_value){
+    if(ADC_value<=200){
+        OCR1A = 204.8;
+        unsigned char UARTData[]="Temperature is 20 °C\n";
         int i=0;
-        while(data1[i]!='\0'){
-            UARTWrite(data1[i]);
+        while(UARTData[i]!='\0'){
+            UARTWrite(UARTData[i]);
             i++;
         }
         delay_ms(200);
     }
-    else if(Temperature>=201 && Temperature<=500){
-        OCR1A = 410;
-        unsigned char data1[]="Temperature: 25 degree C\n";
+    else if(ADC_value>=201 && ADC_value<=500){
+        OCR1A = 409.6;
+        unsigned char UARTData[]="Temperature is 25 °C\n";
         int i=0;
-        while(data1[i]!='\0'){
-            UARTWrite(data1[i]);
+        while(UARTData[i]!='\0'){
+            UARTWrite(UARTData[i]);
             i++;
         }
         delay_ms(200);
     }
-    else if(Temperature>=501 && Temperature<=700){
-        OCR1A = 717;
-        unsigned char data1[]="Temperature: 29 degree C\n";
+    else if(ADC_value>=501 && ADC_value<=700){
+        OCR1A = 716.8;
+        unsigned char UARTData[]="Temperature is 29 °C\n";
         int i=0;
-        while(data1[i]!='\0'){
-            UARTWrite(data1[i]);
+        while(UARTData[i]!='\0'){
+            UARTWrite(UARTData[i]);
             i++;
         }
         delay_ms(200);
     }
-    else if(Temperature>=701 && Temperature<=1024){
-        OCR1A = 973;
-        unsigned char data1[]="Temperature: 33 degree C\n";
+    else if(ADC_value>=701 && ADC_value<=1024){
+        OCR1A = 972.8;
+        unsigned char UARTData[]="Temperature is 33 °C\n";
         int i=0;
-        while(data1[i]!='\0'){
-            UARTWrite(data1[i]);
+        while(UARTData[i]!='\0'){
+            UARTWrite(UARTData[i]);
             i++;
         }
         delay_ms(200);
     }
     else{
         OCR1A = 0;
-        unsigned char data1[]="Temperature: 0 degree C\n";
+        unsigned char UARTData[]="Temperature is 0 °C\n";
         int i=0;
-        while(data1[i]!='\0'){
-            UARTWrite(data1[i]);
+        while(UARTData[i]!='\0'){
+            UARTWrite(UARTData[i]);
             i++;
         }
         delay_ms(200);

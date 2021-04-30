@@ -19,7 +19,7 @@
  */
 
 void Init_PWM(void);/**< Initialize all the Peripherals and pin configurations for PWM */
-void GeneratePWM(uint16_t Temperature);/**< perform PWM operations on ADC value*/
+void GeneratePWM(uint16_t ADC_value);/**< perform PWM operations on ADC value*/
 
 
 #endif  
