@@ -1,7 +1,7 @@
 # Embedded C Programming Examples with Continuous Integration and Code Quality
 
 
-#### CI and Code Quality
+#### CI and Code Quality 
 
 |SF Id.|Name|Build|Cppcheck|Codacy|
 |:--:|:--:|:--:|:--:|:--:|
