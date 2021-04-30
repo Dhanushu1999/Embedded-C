@@ -16,8 +16,8 @@
  * 
  */
 
-void Init_USART();/**< Initialize all the Peripherals and pin configurations for PWM */
-int USARTRead();/**< perform PWM operations on ADC value*/
-void UARTWrite(char data);/**< perform PWM operations on ADC value*/
+void Init_USART();/**< Initialize all the Peripherals and pin configurations for UART */
+int USARTRead();/**< Read characters from UART port*/
+void UARTWrite(char data);/**< Write characters to UART port*/
 
 #endif  
