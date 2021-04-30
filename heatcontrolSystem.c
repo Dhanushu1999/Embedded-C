@@ -20,7 +20,6 @@
  * 
  * @return int Return 0 if the program completes successfully
  * @note PORTB0 is in sink config. i.e when pin is Low, the LED will turn OFF
- * @note PORTB0 is in sink config. i.e when pin is High, the LED will turn ON
  */
 int main(void)
 {
