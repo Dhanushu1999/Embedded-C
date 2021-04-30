@@ -10,9 +10,9 @@
  */
 #ifndef __ACTIVITY3_H__
 #define __ACTIVITY3_H__
-#include "project_config.h"
+#include <avr/io.h>
 #include "user_utils.h"
-#include "activity1.h"
+#include "activity4.h"
 /**
  * @brief Generate PWM values for given digital Input
  * 

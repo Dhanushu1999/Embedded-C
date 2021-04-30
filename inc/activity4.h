@@ -10,8 +10,7 @@
  */
 #ifndef __ACTIVITY4_H__
 #define __ACTIVITY4_H__
-
-#include "activity3.h"
+#include "project_config.h"
 /**
  * @brief Send data via UART interface
  * 

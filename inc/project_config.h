@@ -20,6 +20,8 @@
 #define SENSOR  (PORTD)   /**< Sensors */
 #define BUTTONSENSOR  (PORTD0)   /**< Port for Button Sensor  */
 #define TEMPSENSOR  (PORTD1)   /**< Port for Temp Sensor   */
+#define USART_BAUDRATE 9600 /**< Baud rate for serial communication  */
+#define UBRR_VALUE (((F_CPU / (USART_BAUDRATE * 16UL))) - 1) /**< Formula to calculate UBRR value */
 
 
 #endif /* __PROJECT_CONFIG_H__ */
