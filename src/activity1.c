@@ -18,9 +18,10 @@ void peripheral_init(void)
  */
 void tempbuttonSensor()
 {
-    uint16_t temp;
+    
     if((PIND&(1<<PD0)) && (PIND&(1<<PD1)))/**< if both buttonsensor and tempsensor reads HIGH */
        {
+           uint16_t temp;
            PORTB|=(1<<PB0);
            temp=Read_ADC(0);/**< Read tempsensor value */
            GeneratePWM(temp);
