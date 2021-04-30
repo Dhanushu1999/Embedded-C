@@ -27,7 +27,7 @@ void GeneratePWM(uint16_t ADC_value){
         }
         delay_ms(200);
     }
-    else if(ADC_value>=201 && ADC_value<=500){
+    else if(ADC_value>200 && ADC_value<=500){
         OCR1A = 409.6;/**< PWM for Duty cycle 40% (40*1024/100) */
         unsigned char UARTData[]="Temperature is 25 °C\n";
         int i=0;
@@ -37,7 +37,7 @@ void GeneratePWM(uint16_t ADC_value){
         }
         delay_ms(200);
     }
-    else if(ADC_value>=501 && ADC_value<=700){
+    else if(ADC_value>500 && ADC_value<=700){
         OCR1A = 716.8;/**< PWM for Duty cycle 70% (70*1024/100) */
         unsigned char UARTData[]="Temperature is 29 °C\n";
         int i=0;
@@ -47,7 +47,7 @@ void GeneratePWM(uint16_t ADC_value){
         }
         delay_ms(200);
     }
-    else if(ADC_value>=701 && ADC_value<=1024){
+    else if(ADC_value>700 && ADC_value<=1024){
         OCR1A = 972.8;/**< PWM for Duty cycle 95% (95*1024/100) */
         unsigned char UARTData[]="Temperature is 33 °C\n";
         int i=0;
